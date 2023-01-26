@@ -10,7 +10,7 @@ import static testing.sqa.drivers.AppiumAndroidDriver.driver;
 public class ScrollUp implements Interaction {
     @Override
     public <T extends Actor> void performAs(T t) {
-        driver.findElement(MobileBy.AndroidUIAutomator( "new UiScrollable(new UiSelector().scrollable(true)).scrollToBeginning(1)"));
+    driver.findElement(MobileBy.AndroidUIAutomator( "new UiScrollable(new UiSelector().scrollable(true)).scrollToBeginning(1)"));
     }
 
     public static ScrollUp on(){

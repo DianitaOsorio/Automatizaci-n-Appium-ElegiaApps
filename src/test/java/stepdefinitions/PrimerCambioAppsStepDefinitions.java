@@ -8,7 +8,6 @@ import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import testing.sqa.drivers.AppiumAndroidDriver;
-import testing.sqa.tasks.PlanNoIncluido;
 import testing.sqa.tasks.PrimerCambio;
 
 public class PrimerCambioAppsStepDefinitions {

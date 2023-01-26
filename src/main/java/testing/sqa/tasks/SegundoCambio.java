@@ -19,6 +19,7 @@ public class SegundoCambio implements Task {
                 ExplicitWait.here(10),
                 Click.on(LST_LINEAS),
                 ScrollDown.on(),
+                ScrollUp.on(),
                 ExplicitWait.here(10),
                 Click.on(BTN_LINEA_SEL),
                 ExplicitWait.here(10),
@@ -33,11 +34,11 @@ public class SegundoCambio implements Task {
                 ScrollUp.on(),
                 Click.on(BTN_CONTINUAR),
                 ExplicitWait.here(10),
-                Click.on(CHECKTYC),
-                ExplicitWait.here(10),
-                Click.on(BTN_ACEPTAR),
-                ExplicitWait.here(20),
-                Click.on(BTN_CERRAR)
+                Click.on(CHECKTYC)
+                //ExplicitWait.here(10),
+                //Click.on(BTN_ACEPTAR),
+                //ExplicitWait.here(20),
+                //Click.on(BTN_CERRAR)
         );
     }
     public static SegundoCambio socialMedia() {

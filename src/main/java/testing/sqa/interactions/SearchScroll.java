@@ -17,7 +17,7 @@ public class SearchScroll implements Interaction {
         try {
             driver.findElement(MobileBy.AndroidUIAutomator(
                     "new UiScrollable(new UiSelector().scrollable(true))" +
-                            ".scrollIntoView(new UiSelector().textContains('3160482421'))"));
+                            ".scrollIntoView(new UiSelector().textContains('3160482381'))"));
         } catch (InvalidSelectorException e) {
 
         }

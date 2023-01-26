@@ -132,7 +132,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 22-11-2022 09:53</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 25-01-2023 19:57</span>
     <br style="clear:left"/>
 </div>
 
@@ -173,9 +173,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="failing-color">validar primer cambio  de apps 0$
+                                <span class="error-color">validar primer cambio  de apps 0$
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -198,7 +198,7 @@
         <div class="table">
             <div class="row">
                 <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
+                    <span class="error-message error-message-title">No such element exception: An element could not be located on the page using the given search parameters.</span>
                 </div>
                 <div class="col-sm-2">
                     <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
@@ -214,20 +214,13 @@
         <div class="collapse multi-collapse" id="stacktraceModal-overall">
             <div class="card">
                 <div class="card-header">
-                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
+                    <h4>org.openqa.selenium.NoSuchElementException </h4>
                 </div>
                 <div class="card-body">
                     <div>
-                        <pre>testing.sqa.tasks.PrimerCambio.performAs(PrimerCambio.java:19)<br />stepdefinitions.PrimerCambioAppsStepDefinitions.daClickEnBotonAceptar(PrimerCambioAppsStepDefinitions.java:27)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
+                        <pre>io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)<br />io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)<br />io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br />io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)<br />io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />io.appium.java_client.MobileBy.findElement(MobileBy.java:61)<br />io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)<br />io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />testing.sqa.interactions.ScrollDown2.performAs(ScrollDown2.java:15)<br />testing.sqa.tasks.PrimerCambio.performAs(PrimerCambio.java:27)<br />stepdefinitions.PrimerCambioAppsStepDefinitions.daClickEnBotonAceptar(PrimerCambioAppsStepDefinitions.java:26)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
                     </div>
 
-                    <h4>
-                        Caused by: org.openqa.selenium.TimeoutException
-                    </h4>
-                    <div>
-                            <pre>Expected condition failed: waiting for By.xpath: //android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.TextView to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
-                        <pre>testing.sqa.tasks.PrimerCambio.performAs(PrimerCambio.java :19)<br />stepdefinitions.PrimerCambioAppsStepDefinitions.daClickEnBotonAceptar(PrimerCambioAppsStepDefinitions.java :27)<br />cucumber.runner.Runner.runPickle(Runner.java :80)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java :69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java :74)<br /></pre>
-                    </div>
                 </div>
             </div>
         </div>
@@ -235,18 +228,28 @@
 
 
                 <div class="panel-body">
-                    <a href="pagesource2336610153905750931.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                    <a href="pagesource12974704382465368567.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
                 </div>
             </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="1333ee9c6255ea1802b055462752b7b086d4c192b8f377051859c4aaf9b226be.png" title=" Dado que el usuario haga el primer cambio sin cobro" width="720"/>
-                <img src="1333ee9c6255ea1802b055462752b7b086d4c192b8f377051859c4aaf9b226be.png" title=" Cuando da click en boton aceptar" width="720"/>
-                <img src="7b3bf828057c27d599ace944cd3ac7742703a725601d09f9ca6fa26aebd2f0f4.png" title="  primer cambio" width="720"/>
-                <img src="e47f7ef66d2c75a473b7e39dd94d8324386cd0dc3df0772ba6e4456201b1e8e3.png" title="  explicit wait" width="720"/>
-                <img src="13a77d5ce3565b3d34bf80267a739a378ff1df01f709bbc2e9fe0cf02e4f3211.png" title="  explicit wait (completed)" width="720"/>
-                <img src="bac16a5ba340936dbb6533623415ddd6572624d7935c12fb08ded1606f5aa86b.png" title="  clicks on lista desplegable con las lineas a usar" width="720"/>
-                <img src="1775d4590981b7130af2961e5134d9120f259ca5672ebffd724547373970a25e.png" title="  clicks on lista desplegable con las lineas a usar (completed): <span class='failing-color'>FAILURE</span>" width="720"/>
+                <img src="189412c4645851be4f6f3dcb11a255cbfb85fbd8240ff282033526dae991f01e.png" title=" Dado que el usuario haga el primer cambio sin cobro" width="1080"/>
+                <img src="189412c4645851be4f6f3dcb11a255cbfb85fbd8240ff282033526dae991f01e.png" title=" Cuando da click en boton aceptar" width="1080"/>
+                <img src="957e78b283969f7788e313eb93600bd64dfa899d2fdb025b042767469361210e.png" title="  primer cambio" width="1080"/>
+                <img src="cb81802501d2968fa49216683cdccdb7580d0650b6a8bf34940750e0b66bc48e.png" title="  explicit wait" width="1080"/>
+                <img src="96fe4495bee7fa0bc5cf94cc4556efc2a70c04631aee0347a9a0a9b1b3bbd321.png" title="  explicit wait (completed)" width="1080"/>
+                <img src="96fe4495bee7fa0bc5cf94cc4556efc2a70c04631aee0347a9a0a9b1b3bbd321.png" title="  clicks on lista desplegable con las lineas a usar" width="1080"/>
+                <img src="cceca3381d864ed1b5bdcacb3ab96839e80a9ebe89f0aa026f2026f8dac7cb4d.png" title="  clicks on lista desplegable con las lineas a usar (completed)" width="1080"/>
+                <img src="cceca3381d864ed1b5bdcacb3ab96839e80a9ebe89f0aa026f2026f8dac7cb4d.png" title="  scroll down" width="1080"/>
+                <img src="d8761607074e93005cbe8f0b8c4b8e851192279c65be1b82850d52f8d02edc29.png" title="  scroll down (completed)" width="1080"/>
+                <img src="d8761607074e93005cbe8f0b8c4b8e851192279c65be1b82850d52f8d02edc29.png" title="  scroll up" width="1080"/>
+                <img src="e6d4e13d224084cc5fcd25d136920d7abd203a6abf781ca8ac9f48265d6f8cb3.png" title="  scroll up (completed)" width="1080"/>
+                <img src="e6d4e13d224084cc5fcd25d136920d7abd203a6abf781ca8ac9f48265d6f8cb3.png" title="  clicks on linea a seleccionar" width="1080"/>
+                <img src="e5fc892f23a8decc9ce378e7d8e6464df31be9604fa9ee2504a90263fd950ab2.png" title="  clicks on linea a seleccionar (completed)" width="1080"/>
+                <img src="e5fc892f23a8decc9ce378e7d8e6464df31be9604fa9ee2504a90263fd950ab2.png" title="  explicit wait" width="1080"/>
+                <img src="6944e59303cc8ab5c2a050fef39ccaab3978754af7eaad8197177f15797ba00f.png" title="  explicit wait (completed)" width="1080"/>
+                <img src="6944e59303cc8ab5c2a050fef39ccaab3978754af7eaad8197177f15797ba00f.png" title="  scroll down2" width="1080"/>
+                <img src="70012a429984a3abf6bf528f32d246dbdb599a3818ccd5d49711538c4eb2db15.png" title="  scroll down2 (completed): <span class='error-color'>ERROR</span>" width="1080"/>
             </div>
         </div>
 
